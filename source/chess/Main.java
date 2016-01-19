@@ -47,14 +47,11 @@ public class Main {
     SplashScreen splashScreen = null;
     
     try {
-      //System.getProperties().list(System.out);
       UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
       if (!checkSystemRequirements())
         System.exit(-1);
       
       splashScreen = new SplashScreen();
-      
-      ///int s = Integer.parseInt("23s");
       
       Chess.main(args);
       
